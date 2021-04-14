@@ -20,7 +20,7 @@ public class Main extends PApplet{
 	boolean disable;
 	boolean interact;
 	boolean Rab;
-	boolean oni;
+	boolean flower;
 	boolean bamboo;
 	boolean boxCover;
 	boolean Turtle;
@@ -34,7 +34,7 @@ public class Main extends PApplet{
 		disable = false;
 		interact=false;
 		Rab=false;
-		oni=false;
+		flower=false;
 		bamboo=false;
 		boxCover=false;
 		Turtle=false;
@@ -68,7 +68,7 @@ public class Main extends PApplet{
 			
 			else if (mouseX > 849 && mouseX < 849 + 321
 					&& mouseY > 0 && mouseY < 0+283 ) {
-				compo.drawShineBamboo();
+				compo.drawBlackFlower();
 			}
 			
 			else if (mouseX > 0 && mouseX < 0 + 323
@@ -78,7 +78,7 @@ public class Main extends PApplet{
 			
 			else if (mouseX > 1000 && mouseX < 1000 + 120
 					&& mouseY > 308 && mouseY < 308 +64) {
-				compo.drawShineOni();
+				compo.drawBlackBird();
 			}
 			
 			else if (mouseX > 896 && mouseX < 896 + 275
@@ -86,13 +86,7 @@ public class Main extends PApplet{
 				compo.drawShineBoxCover();
 			}
 			
-			for (int i = 0; i < words.size(); i++) {
-				
-				if (words.get(i).equals("GORRIÓN(1)") && disable == false) {
-					
-					compo.drawRabbit();
-				}
-				
+			
 				
 			switch (interaction) {
 			case 1:
@@ -112,11 +106,10 @@ public class Main extends PApplet{
 			}
 			break;
 			}
-		case 2 :
+		
 	
 		}	
 
-	}
 	public void mouseClicked() {
 
 		switch (state) {
@@ -167,11 +160,11 @@ public class Main extends PApplet{
 					&& mouseY > 20 && mouseY < 20 +392) {
 				interact=true;
 				if (interactionCounter>2 && interactionCounter<5) {
-					if (oni==false) {
+					if (flower==false) {
 						interactionCounter+=1;
-						oni=true;
+						flower=true;
 					}
-					compo.dragOni();
+					compo.dragBird();
 				}	
 			}	
 			if (mouseX > 250 && mouseX < 250 + 846

@@ -26,11 +26,11 @@ public class Controller {
 		interactive.drawLaugh();
 	}
 	//bamboo methods
-	public void drawBamboo() {
-		interactive.drawBamboo();
+	public void drawFlower() {
+		interactive.drawFlower();
 	}
-	public void drawShineBamboo(){
-		interactive.drawShineBamboo();
+	public void drawBlackFlower(){
+		interactive.drawBlackFlower();
 	}
 	public void drawLeaf() {
 		interactive.drawLeaf();
@@ -46,14 +46,14 @@ public class Controller {
 		interactive.dragTurtle();
 	}
 	//Oni methods
-	public void drawOni() {
-		interactive.drawOni();
+	public void drawBird() {
+		interactive.drawBird();
 	}
-	public void drawShineOni() {
-		interactive.drawShineOni();
+	public void drawBlackBird() {
+		interactive.drawBlackBird();
 	}
-	public void dragOni(){
-		interactive.dragOni();
+	public void dragBird(){
+		interactive.dragBird();
 	}	
 	//box methods
 	public void drawBox() {

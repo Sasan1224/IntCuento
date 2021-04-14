@@ -7,9 +7,9 @@ public class Interactive extends PApplet{
 	PApplet app;
 	//declaration of classes
 	Rabbit rabbit;
-	Object bamboo;
+	Object flower;
 	Object Turtle;
-	Object oni;
+	Object bird;
 	Object box;
 	Object boxCover;
 	Leaf leaf;
@@ -18,10 +18,10 @@ public class Interactive extends PApplet{
 		this.app=app;
 		//initialization of the classes
 		rabbit = new Rabbit(0, 0, app);
-		bamboo = new Bamboo(685, 0, app);
+		flower = new Flower(685, 0, app);
 		leaf = new Leaf (600,0, app);
 		Turtle = new Turtle(600, 399, app);
-		oni = new Oni (900, 300, app);
+		bird = new Bird(900, 300, app);
 		box = new Box (0, 0, app);
 		boxCover = new BoxCover(863, 300, app);
 	}
@@ -37,11 +37,11 @@ public class Interactive extends PApplet{
 		rabbit.paintLaugh();
 	}
 	//bamboo methods
-	public void drawBamboo() {
-		bamboo.paintObject();
+	public void drawFlower() {
+		flower.paintObject();
 	}
-	public void drawShineBamboo() {
-		bamboo.paintShine();
+	public void drawBlackFlower() {
+		flower.paintShine();
 	}
 	public void drawLeaf() {
 		leaf.paintLeaf();
@@ -56,15 +56,15 @@ public class Interactive extends PApplet{
 	public void dragTurtle() {
 		Turtle.dragObject();
 	}
-	//Oni methods
-	public void drawOni() {
-		oni.paintObject();
+	
+	public void drawBird() {
+		bird.paintObject();
 	}
-	public void drawShineOni() {
-		oni.paintShine();
+	public void drawBlackBird() {
+		bird.paintShine();
 	}
-	public void dragOni(){
-		oni.dragObject();
+	public void dragBird(){
+		bird.dragObject();
 	}
 	//box methods
 	public void drawBox() {

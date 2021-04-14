@@ -33,11 +33,11 @@ public class CompoScreen extends PApplet{
 		control.drawLaugh();
 	}
 	//bamboo methods
-	public void drawBamboo() {
-		control.drawBamboo();
+	public void drawFlower() {
+		control.drawFlower();
 	}
-	public void drawShineBamboo() {
-		control.drawShineBamboo();
+	public void drawBlackFlower() {
+		control.drawBlackFlower();
 	}
 	public void drawLeaf() {
 		control.drawLeaf();
@@ -53,14 +53,14 @@ public class CompoScreen extends PApplet{
 		control.dragTurtle();
 	}
 	//Oni methods
-	public void drawOni() {
-		control.drawOni();
+	public void drawBird() {
+		control.drawBird();
 	}
-	public void drawShineOni() {
-		control.drawShineOni();
+	public void drawBlackBird() {
+		control.drawBlackBird();
 	}
-	public void dragOni(){
-		control.dragOni();
+	public void dragBird(){
+		control.dragBird();
 	}	
 	//box methods
 	public void drawBox() {
